@@ -1,0 +1,179 @@
+*{
+	background-color: #181818;
+	color:#fff;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	display: inline;
+}
+
+.nav {
+	display: inline;
+	padding: 8px;
+	text-align: center;
+	vertical-align: middle;
+	padding: 0px 20px 0px 20px;
+	margin: 5px 30px 5px 30px; 
+	font-family: 'Dancing Script', cursive;
+	font-size: 30px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.arrow-down {
+	position: relative;
+}
+
+.nav .material-symbols-outlined {
+	font-variation-settings:
+		'FILL' 10,
+		'wght' 400,
+		'GRAD' 0,
+		'opsz' 48;
+
+	position: absolute;
+	font-size: 50px;
+	transform: translate(-25px, -6px);
+}
+
+
+.nav:hover {
+	text-decoration-line: underline;
+	text-underline-offset: 5px;
+}
+
+
+.Navbar {
+	text-align: center;   
+	margin: 20px 0px 20px 0px;
+	background-color: #fff;
+}
+
+.Hero {
+	width:100%;
+	height: 120vh;
+	background-image: url("images/hero_bkgnd.png");
+	background-size: contain;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	justify-content:center;
+	align-items: center;
+
+	display: flex;
+	flex-direction: column;
+
+}
+
+.Hero .name em {
+	font-size: 40px;
+	color: rgb(19, 164, 236);
+	padding: 10px;
+	background: none;
+}
+.Hero p{
+	font-size: 20px;
+}
+.Hero p {
+	background: none;
+}
+
+.Hero .name {
+	background: none;
+}
+
+.Hero img {
+	width:15%;
+	height: auto;
+	background: #181818;
+	border-radius: 100%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.AboutMe {
+	margin: 20px;
+	padding: 20px;
+}
+
+
+.AboutMe .suffer {
+	position: relative;
+	width: 500px;
+	height: 100px;	
+	padding: 10px;
+	cursor: pointer;
+	transform: translate(450px, 0px);
+
+}
+  
+.default-text {
+	display: block;
+}
+  
+.hover-text {
+	display: none;
+}
+  
+.suffer:hover .default-text {
+	display: none;
+}
+  
+.suffer:hover .hover-text {
+	display: block;
+}
+
+.AboutMe {
+	position: relative;
+	
+}
+
+.info {
+	display: flex;
+	flex-direction: row;
+	margin: 20px;
+}
+
+.info img {
+	width: 20%;
+	border-radius: 100%;
+}
+
+.info p {
+	padding: 0px 30px 0px 30px;
+	
+	font-size: 20px;
+	vertical-align: middle;
+}
+
+.info span {
+	color:aquamarine;
+	font-family: 'Dancing Script', cursive;
+	font-size: 30px;
+}
+
+.info .quote {
+	text-align: center;
+}
+
+
+.Portfolio {
+	display: block;
+	clear: both;
+}
+
+.footer {
+	display: flex;
+	background-color: rgb(240, 240, 31);
+	flex-direction: row;
+}
+
+.footer p {
+	padding: 20px;
+	margin: 20px;
+}
+
