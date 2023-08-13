@@ -78,6 +78,8 @@ li {
 }
 .Hero p{
 	font-size: 20px;
+	position: relative;
+	transform: translate(0, 100px);
 }
 .Hero p {
 	background: none;
@@ -88,11 +90,30 @@ li {
 }
 
 .Hero img {
+	position: relative;
+	transform: translate(0, 100px);
 	width:15%;
 	height: auto;
 	background: #181818;
 	border-radius: 100%;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#yeslook {
+	position: relative;
+	text-align: center;
+	transform: translate(250px, -400px);
+	font-family: 'Dancing Script', cursive;
+	font-size: 30px;
+}
+
+#arrow1 {
+	position: relative;
+	background: none;
+	border-radius: 0;
+	box-shadow: none;
+	width: 10%;
+	transform: translate(185px, -425px);
 }
 
 .AboutMe {
