@@ -1,0 +1,531 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #333; /* Navbar background */
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff; /* Text color */
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    margin-left: 20px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.nav-list li a:hover {
+    color: #3b82f6;
+}
+
+/* Mobile Styles */
+.menu-toggle {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 4px;
+    transition: all 0.3s ease;
+}
+
+/* Mobile Menu Styles */
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0; /* Start offscreen */
+    height: 100%;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.95); /* Semi-transparent background */
+    transform: translateX(-100%); /* Offscreen initially */
+    transition: transform 0.3s ease; /* Smooth slide */
+    z-index: 1000; /* On top of other elements */
+}
+
+.mobile-menu.active {
+    transform: translateX(0); /* Slide in */
+}
+
+.mobile-nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    justify-content:space-evenly;
+    height: 100%; /* Full height */
+}
+
+.mobile-nav-list li {
+    width: 100%; /* Full width */
+    text-align: center; /* Center text */
+    margin: 10px 0; /* Space between items */
+}
+
+.mobile-nav-list li a {
+    color: #fff; /* Text color */
+    font-size: 2.5rem; /* Size for mobile */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.mobile-nav-list li a:hover {
+    color: #3b82f6; /* Hover color */
+}
+
+.section {
+    padding: 2rem 1.5rem;
+    text-align: center;
+}
+
+.about-heading-english {
+    text-align: center;
+    font-size: 2.5rem; /* Make it bigger */
+    margin-bottom: 1rem; /* Space below the heading */
+    transition: opacity 0.3s; /* Smooth transition for hover effect */
+}
+
+.about-heading-devnagri {
+    display: none; /* Hide the Devanagari text initially */
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centering the content */
+    margin-top: 2rem; /* Add some space above */
+}
+
+.about-image {
+    width: 200px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
+    border-radius: 50%; /* Make it circular */
+    margin-right: 2rem; /* Space between image and text */
+	padding: 25px; /* Padding for image */
+}
+
+.about-text {
+    max-width: 700px; /* Limit text width for better readability */
+    text-align: left; /* Align text to the left */
+	padding-right: 30px; /* Padding for image */
+}
+
+.about .translate {
+    position: relative;
+    text-align: center;
+    font-size: 2.5rem; /* Make it bigger */
+    margin-bottom: 1rem; /* Space below the heading */
+    transition: opacity 0.3s; /* Smooth transition for hover effect */
+    cursor: pointer;
+}
+
+.default-text {
+    display: block;
+}
+
+.hover-text {
+    display: none;
+}
+
+.translate:hover .default-text {
+    display: none;
+}
+
+.translate:hover .hover-text {
+    display: block; /* Show Devanagari text on hover */
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.skill {
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.skill-bar {
+    background-color: #ddd;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.skill-level {
+    height: 100%;
+    background-color: #3b82f6;
+    border-radius: 10px;
+    transition: width 0.5s ease-in-out;
+}
+
+.project a {
+	text-decoration: none; /* Remove underline */
+	color: inherit; /* Keep the text color the same as the surrounding text */
+}
+
+.project a:hover {
+	color: #007BFF; /* Optional: Change color on hover */
+}
+
+#internships {
+    padding: 2rem; /* Padding around the section */
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 8px; /* Rounded corners */
+    margin: 2rem 0; /* Margin above and below the section */
+}
+
+.internship {
+    margin-bottom: 1.5rem; /* Space between internships */
+    padding: 1rem; /* Padding inside each internship */
+    border: 1px solid #ccc; /* Border around each internship */
+    border-radius: 5px; /* Rounded corners for internships */
+}
+
+.internship h3 {
+    margin: 0; /* Remove default margin for headings */
+    font-size: 1.5rem; /* Font size for internship title */
+}
+
+.internship p {
+    margin: 0.5rem 0; /* Space above and below paragraphs */
+}
+
+/* Timeline for education */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline-item {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+    width: 80%;
+}
+
+.date {
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.social-icons {
+    margin: 1.5rem 0;
+}
+
+.social-icons a {
+    color: #333;
+    font-size: 1.8rem;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #3b82f6;
+}
+
+#contact a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Keep the text color same as the surrounding text */
+}
+
+#contact a:hover {
+    color: #3b82f6; /* Optional: Change color on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Responsive */
+
+/* For screens under 480px */
+@media (max-width: 480px) {
+    .about-heading-english,
+    .about .translate {
+        font-size: 1.5rem; /* Further reduce heading size */
+    }
+
+    .about-image {
+        width: 120px; /* Even smaller image */
+        height: 120px; /* Even smaller height */
+    }
+
+    .about-text {
+        max-width: 90%; /* Limit text width for mobile */
+        padding: 20px; /* Increase padding for readability */
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+	.nav-list {
+        display: none; /* Hide nav links by default */
+    }
+    .menu-toggle {
+        display: flex; /* Show the menu button */
+    }
+
+	.about-heading-english,
+    .about .translate {
+        font-size: 2rem; /* Adjust heading size */
+    }
+
+    .about-container {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center; /* Center-align */
+    }
+
+    .about-image {
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 1rem; /* Add bottom margin */
+        width: 150px; /* Smaller image on smaller screens */
+        height: 150px; /* Smaller height on smaller screens */
+    }
+
+    .about-text {
+        padding: 25px; /* Reduce padding for smaller screens */
+    }
+	
+    .skills-container, .project-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 769px) {
+    .about-container {
+        flex-direction: row; /* Align items in a row */
+    }
+
+    .about-text {
+        text-align: left; /* Align text to the left for larger screens */
+    }
+
+	.project{
+		padding: 0rem 7.5rem;
+	}
+
+	#internships{
+		padding: 1.7rem 8.125rem 0rem 8.125rem;
+	}
+}
+
+/* For screens with a max height of 600px (e.g., small mobile devices) */
+@media (max-height: 600px) {
+    .about-heading-english,
+    .about .translate {
+        font-size: 1.5rem; /* Reduce heading size further */
+    }
+
+    .about-container {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center; /* Center-align */
+    }
+
+    .about-image {
+        width: 100px; /* Even smaller image */
+        height: 100px; /* Even smaller height */
+    }
+
+    .about-text {
+        padding: 10px; /* Reduce padding for readability */
+    }
+
+    .skills-container, .project-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-list {
+        flex-direction: column; /* Stack nav items vertically */
+        padding: 1rem 0; /* Add padding for mobile */
+    }
+}
+
+/* For screens with a max height of 800px (e.g., medium-sized devices) */
+@media (max-height: 800px) {
+    .about-heading-english,
+    .about .translate {
+        font-size: 1.8rem; /* Adjust heading size */
+    }
+
+    .about-image {
+        width: 120px; /* Slightly smaller image */
+        height: 120px; /* Slightly smaller height */
+    }
+
+    .about-text {
+        padding: 15px; /* Adjust padding */
+    }
+
+    .skills-container {
+        justify-content: space-between; /* Space items evenly */
+    }
+
+    .project-list {
+        flex-direction: row; /* Keep projects in a row */
+        flex-wrap: wrap; /* Allow wrapping if necessary */
+    }
+
+    .nav-list {
+        flex-direction: row; /* Keep nav items in a row */
+    }
+}
+
+/* For screens with a min height of 900px (e.g., large devices) */
+@media (min-height: 900px) {
+    .about-heading-english,
+    .about .translate {
+        font-size: 2.5rem; /* Increase heading size */
+    }
+
+    .about-image {
+        width: 200px; /* Original size */
+        height: 200px; /* Original size */
+    }
+
+    .about-text {
+        padding: 20px; /* Increase padding for readability */
+    }
+
+    .skills-container {
+        justify-content: space-around; /* Space items around */
+    }
+
+    .project-list {
+        flex-direction: row; /* Keep projects in a row */
+        flex-wrap: wrap; /* Allow wrapping if necessary */
+    }
+
+    .nav-list {
+        flex-direction: row; /* Keep nav items in a row */
+    }
+}
+
+
+/* For screens under 480px */
+@media (max-width: 480px) and (max-height: 600px) {
+    .about-heading-english,
+    .about .translate {
+        font-size: 1.5rem; /* Further reduce heading size */
+    }
+
+    .about-image {
+        width: 120px; /* Even smaller image */
+        height: 120px; /* Even smaller height */
+    }
+
+    .about-text {
+        max-width: 90%; /* Limit text width for mobile */
+        padding: 20px; /* Increase padding for readability */
+    }
+}
+
+@media screen and (max-width: 768px) and (max-height: 800px) {
+
+	.nav-list {
+        display: none; /* Hide nav links by default */
+    }
+    .menu-toggle {
+        display: flex; /* Show the menu button */
+    }
+
+	.about-heading-english,
+    .about .translate {
+        font-size: 2rem; /* Adjust heading size */
+    }
+
+    .about-container {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center; /* Center-align */
+    }
+
+    .about-image {
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 1rem; /* Add bottom margin */
+        width: 150px; /* Smaller image on smaller screens */
+        height: 150px; /* Smaller height on smaller screens */
+    }
+
+    .about-text {
+        padding: 25px; /* Reduce padding for smaller screens */
+    }
+	
+    .skills-container, .project-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 769px) and (min-height: 900px) {
+    .about-container {
+        flex-direction: row; /* Align items in a row */
+    }
+
+    .about-text {
+        text-align: left; /* Align text to the left for larger screens */
+    }
+
+	.project{
+		padding: 0rem 7.5rem;
+	}
+
+	#internships{
+		padding: 1.7rem 8.125rem 0rem 8.125rem;
+	}
+}

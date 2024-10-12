@@ -1,122 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio Website</title>
-
-	<!-- External CSS -->
-	<link rel="stylesheet" href="style.css">
-	
-	<!-- Font 1 -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-
-	<!-- Font 2 -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Noto+Sans:wght@700&family=Tektur:wght@700&display=swap" rel="stylesheet">
-
-	<!-- Icon -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aakash A. Joshi | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="512x512" href="images/favicon/android-chrome-512x512.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-chrome-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
-	<div class="Navbar">
-		<!-- Navigation Bar -->
-		<ul>
-			<li><a href="#" class="nav">Home</a></li>
-			<li><a href="#" class="nav">About Me</a></li>
-			<li><a href="#" class="nav arrow-down">
-				<span class="material-symbols-outlined">
-					arrow_downward
-				</span></a></li>
-			<li><a href="#" class="nav">Projects</a></li>
-			<li><a href="resume/Aakash_Joshi_Resume.pdf" class="nav">Resume</a></li>
-		</ul>
-	</div>
+    <header>
+		<nav>
+			<h1 class="logo">Aakash A. Joshi</h1>
+			<div class="menu-toggle" id="mobile-menu">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div>
+			<ul class="nav-list">
+				<li><a href="#about">About</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#internships">Internships</a></li>
+				<li><a href="#education">Education</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<li><a href="/resume/Resume_Aakash_A_Joshi.pdf" target="_blank" rel="noopener noreferrer" id="resume-link">Resume</a></li>
+			</ul>
+		</nav>
+		<div class="mobile-menu" id="mobile-menu-content">
+			<ul class="mobile-nav-list">
+				<li><a href="#about" class="mobile-nav-link">About</a></li>
+				<li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+				<li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+				<li><a href="#internships" class="mobile-nav-link">Internships</a></li>
+				<li><a href="#education" class="mobile-nav-link">Education</a></li>
+				<li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+				<li><a href="resume/Resume_Aakash_A_Joshi.pdf" class="mobile-nav-link" target="_blank">Resume</a></li>
+			</ul>
+		</div>
+	</header>
 
+	<section id="about">
+		<div class="translate">
+			<h1 class="default-text">The Real Me &#x1F60E;</h1>
+			<h1 class="hover-text">मैं ऐसा क्यों हूँ &#x1F61D</h1>
+		</div>
+
+		<div class="about-container">
+			<img src="images/my_img.png" alt="Aakash Joshi" class="about-image">
+			<div class="about-text">
+				<p>I'm <strong>Aakash A. Joshi</strong>, a passionate Computer Engineering student dedicated to merging technology with creativity. With a strong foundation in <strong>Python, web development, artificial intelligence</strong>, and <strong>machine learning</strong>, I thrive on solving complex problems and turning innovative ideas into impactful solutions.</p>
+				
+				<p>🚀 <strong>What I Do:</strong> I focus on building intuitive applications that enhance user experiences and drive positive change. My projects reflect my commitment to excellence and continuous learning, showcasing my skills in coding and design.</p>
+				
+				<p>🔍 <strong>My Journey:</strong> As an eager learner, I'm always exploring new technologies and methodologies to stay ahead in this ever-evolving field. I actively seek internships and collaborative opportunities to gain hands-on experience and expand my skill set.</p>
+				
+				<p>📫 <strong>Let’s Connect:</strong> I believe in the power of collaboration and sharing knowledge. Feel free to reach out—I’m excited to connect, learn, and grow together!</p>
+			</div>
+		</div>
+	</section>
+
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <h3>Python</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>C++</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 70%;"></div>
+                </div>
+            </div>
+			<div class="skill">
+                <h3>DSA</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 60%;"></div>
+                </div>
+            </div>
+			<div class="skill">
+                <h3>Flask/Streamlit</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 65%;"></div>
+                </div>
+            </div>
+			<div class="skill">
+                <h3>HTML/CSS/JS</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 75%;"></div>
+                </div>
+            </div>
+			<div class="skill">
+                <h3>Promt Engineering</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Machine Learning</h3>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 85%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <div class="project">
+                <h3>Zenkraft</h3>
+    			<p>
+        			Zenkraft is a unique yoga application designed to enhance users' practice through real-time posture detection and correction. Utilizing advanced machine learning algorithms, the app analyzes users' poses and provides instant feedback to improve alignment and technique.
+    			</p>
+    			<p>
+        			The app features personalized yoga courses tailored to individual goals and health conditions, making it accessible for practitioners of all levels. With a user-friendly interface and engaging visual content, Zenkraft aims to promote mindfulness and well-being through the art of yoga.
+    			</p>
+            </div>
+            <div class="project">
+				<h3><a href="https://github.com/avianage/Renewable-Energy-Demand-Forcasting" target="_blank">Renewable Energy Forecast Management</a></h3>
+				<p>
+					The Renewable Energy Forecast Management project aims to optimize energy distribution by accurately predicting renewable energy generation. Utilizing advanced forecasting techniques, the system analyzes historical data to provide reliable predictions, ensuring efficient resource management.
+				</p>
+				<p>
+					This project focuses on improving grid stability and integrating renewable sources into existing energy systems. By offering actionable insights and real-time data visualization, it empowers stakeholders to make informed decisions, driving the transition toward sustainable energy solutions.
+				</p>
+			</div>
+			<div class="project">
+				<h3><a href="https://github.com/avianage/movie-recommender-system" target="_blank">Movie Recommender System</a></h3>
+				<p>
+					The Movie Recommender System project leverages the TMDB 5000 dataset to provide personalized movie recommendations. By employing natural language processing techniques through NLTK and advanced vectorization methods, the system analyzes user preferences and movie characteristics to generate tailored suggestions.
+				</p>
+				<p>
+					This project enhances user experience by offering relevant recommendations based on genre, cast, and user ratings, making it easier for movie enthusiasts to discover new films. With a focus on accuracy and efficiency, the system aims to revolutionize the way users find and enjoy movies.
+				</p>
+			</div>
+			<div class="project">
+				<h2>Proxmox Server</h2>
+				<p>Set up a Proxmox server to create a robust virtualization environment. Plans to deploy multiple projects, including a future media server and file server for music and video streaming.</p>
+			</div>
+	
+        </div>
+    </section>
+
+	<section id="internships" class="section">
+		<h2>Internships</h2>
+		<div class="internship">
+			<h3>Tata Consulting Engineers Ltd.</h3>
+			<p><strong>Role:</strong> Intern</p>
+			<p><strong>Duration:</strong> [December, 2023] - [January, 2024]</p>
+			<p><strong>Description:</strong> During my internship at Tata Consulting Engineers Ltd., I gained valuable experience in ML Algorithms, Time Series Analysis, which helped me develop my skills in working with real-time data. I was also able to engage in thoughful discussion with the talented team at TCE.</p>
+		</div>
+		<div class="internship">
+			<h3>Tech Entrepreneurs</h3>
+			<p><strong>Role:</strong> Web Intern</p>
+			<p><strong>Duration:</strong> [February, 2023] - [April, 2024]</p>
+			<p><strong>Description:</strong> During my internship at Tech Entrepreneurs, I was exposed to various activities in Web Application Development domain,implementing HTML, CSS, PHP and MySQL Database skills.</p>
+		</div>
+		<!-- Add more internship entries as needed -->
+	</section>
 	
 
-	<div class="Hero">
-		<!-- Hero Section -->
-		<br>
-		<img src="images/hello_sticker.png" alt="Greeting Sticker">
-		<p>I'm <span class="name"><em>Aakash Joshi !!</em></span></p>
-		
-		<p id="descp">A Computer Engineering Student who loves to explore and solve problems.</p>
-		<p id="yeslook">I don't look <br>like this...</p>
-		<img id="arrow1" src="images/curve-arrow-1.png" alt="curve-arrow-1">
+    <section id="education" class="section">
+        <h2>Education</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>B.E. in Computer Engineering</h3>
+                <span class="date">August 2021 - Present</span>
+                <p>Pune University</p>
+            </div>
+			<div class="timeline-item">
+                <h3>Bachelor's in Computer Applications</h3>
+                <span class="date">August 2021 - July 2024</span>
+                <p>Amity Online University</p>
+            </div>
+            <div class="timeline-item">
+                <h3>Higher Secondary Certification</h3>
+                <span class="date">July 2019 - April 2021</span>
+                <p>Royal Jr. College</p>
+            </div>
+			<div class="timeline-item">
+                <h3>Secondary School Certification</h3>
+                <span class="date">April 2019</span>
+                <p>Vidya Niketan School</p>
+            </div>
+        </div>
+    </section>
 
-	</div>
-	<br>
-	<div class="AboutMe">
-		<!-- About Me Section -->
-		<div class="suffer">
-			<h1 class="default-text">About Me &#x28;<span> &#x092E;&#x0948;&#x0902; &#x090E;&#x0938;&#x093E; &#x0915;&#x094D;&#x092F;&#x094B;&#x0902; &#x0939;&#x0942;&#x0902;</span> &#x1F602; &#x1F602; &#x29;</h1>
-			<h1 class="hover-text">About Me &#x28;<span> &#x092E;&#x0948;&#x0902; &#x090E;&#x0938;&#x093E; &#x0915;&#x094D;&#x092F;&#x094B;&#x0902; &#x0939;&#x0942;&#x0902;</span> &#x1F622; &#x1F622; &#x29;</h1>
-		
-		</div>
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out through any of the platforms below!</p>
+		<p>Email: <a href="mailto:aakashj853@gmail.com">aakashj853@gmail.com</a></p>
+		<p>Phone: <a href="tel:+91 8788747662">+91 8788747662</a></p>
+        <div class="social-icons">
+            <a href="https://github.com/avianage" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/aakash-joshii" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/aakashxjoshi" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </section>
 
-		<div class="info">
-			<img src="images/my_img.png" alt="mazha thobad">
-			<div>
-				<p>I'm a passionate Computer Engineering Aspirant, trying to learn more about AI, Web Technologies, Open CV, IOT, DSA and much more new technologies...</p>
-				<p>As a Third Year Student in Pune University, I'm trying to grab as much knowledge I am able to obtain from my faculty, peers, seniors along with the various mentors across the internet.</p>
-				<p>This is my small attempt in making a portfolio website for showcasing my projects and skills which will stay updated throughout my career.</p>
-				<p>What motivates me the most is the quote my one of my professors from when I was preparing for JEE Exams in Allen...</p>
-				<p class="quote"><em><span>" When Life Flashes before your Eyes, Make sure it's Worth Watching..."</span> -  Akshay Jain Sir</em></p>
-			</div>
-		</div>
-		
+    <footer>
+        <p>© 2024 Aakash Joshi. All Rights Reserved.</p>
+    </footer>
 
-	</div>
-	<br>
-	<div class="Milestone">
-
-	</div>
-	<br>
-	<div class="Portfolio">
-		<!-- Portfolio Section -->	
-		<h1>Projects</h1>
-
-		
-		<div class="Projects">
-			<!-- Projects-->
-			<p>Portfolio Website</p>
-			<p>Open CV Project</p>
-			<p></p>
-		
-		</div>
-
-		<div class="Skills">
-			<!-- Skills and Tools-->
-			<p>Languages: HTML5, CSS3 etc.</p>
-			<p>Frameworks: </p>
-			<p>Achievements: </p>
-		</div>
-	</div>
-	<br>
-
-	<footer>
-		<!-- Contact Me -->
-		<div class="foot">
-			<div class="foot">
-				<p class="name">Created By<br><span><em>Aakash Joshi</em></span></p>
-			</div>
-			<div class="contact">
-				<p><em>Email: aakashj853@gmail.com</em></p>
-				<p><em>Phone: +91 9619598825</em></p>
-			</div>
- 		
-			<div class="social">
-				<a href="https://www.linkedin.com/in/aakash-joshii/"><img src="images/linkedIn.png" alt="LinkedIn Profile"></a>
-				<a href="https://www.instagram.com/aakashxjoshi/"><img src="images/instagram.png" alt="Instagram Profile"></a>
-				<a href="https://github.com/avianage"><img src="images/github.png" alt="Github Profile"></a>
-			</div>	 
-		</div>
-	</footer>
-	
+    <script src="js/script.js"></script>
 </body>
 </html>
