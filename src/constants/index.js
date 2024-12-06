@@ -23,6 +23,20 @@ import {
     jobit,
     tripguide,
     threejs,
+    linkedin,
+    github,
+    instagram,
+    ml,
+    cloud,
+    problem,
+    tce,
+    techentre,
+    python,
+    cpp,
+    linux,
+    energy_demand,
+    movie,
+    emotion
   } from "../assets";
   
   export const navLinks = [
@@ -42,24 +56,32 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "ML Enthusiast",
+      icon: ml,
+    },
+    {
+      title: "Web Development Advocate",
       icon: web,
     },
     {
-      title: "React Native Developer",
-      icon: mobile,
+      title: "Cloud and DevOps Enthusiast",
+      icon: cloud,
     },
     {
-      title: "Backend Developer",
-      icon: backend,
-    },
-    {
-      title: "Content Creator",
-      icon: creator,
+      title: "Problem Solver",
+      icon: problem,
     },
   ];
   
   const technologies = [
+    {
+      name: "python 3",
+      icon: python,
+    },
+    {
+      name: "C++",
+      icon: cpp
+    },
     {
       name: "HTML 5",
       icon: html,
@@ -73,21 +95,9 @@ import {
       icon: javascript,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
       name: "React JS",
       icon: reactjs,
-    },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
-    {
-      name: "Tailwind CSS",
-      icon: tailwind,
-    },
+    },  
     {
       name: "Node JS",
       icon: nodejs,
@@ -112,59 +122,35 @@ import {
       name: "docker",
       icon: docker,
     },
+    {
+      name: "linux",
+      icon: linux,
+    }
+    
   ];
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "Intern",
+      company_name: "Tata Consulting Engineers Ltd.",
+      icon: tce,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "December 2023 - January 2024",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Applied Machine Learning Concepts like Time Series and Random Forest",
+        "Contributed to a project regarding predictive maintenance of motors",
+        
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      title: "Web Intern",
+      company_name: "TechEntrepreneurs",
+      icon: techentre,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "February 2023 - April 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Exposed to various activities in Web Application Development domain",
+        "Implemented HTML, CSS, PHP, and MySQL Database skills",
       ],
     },
   ];
@@ -172,94 +158,97 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
+        "You have excelled due to your hard work, passion, and dedication. You have the courage to learn advanced technology, and I have full faith in your legitimacy. Keep up the hard work.",
+      name: "Dr. Aditi Nautiyal",
+      designation: "Assistant Manager",
+      company: "Tata Consulting Engineers Ltd.",
+      image: "https://media.licdn.com/dms/image/v2/D5603AQH0DyFOGjmQjg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1705493806312?e=1738800000&v=beta&t=7buEuA-pJCwQ6cm2RmxjTHtt8gwlhuYW6k82Emw4S-s",
     },
   ];
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Renewable Energy Demand Forcasting",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Identifies the most reliabke model for energy demand forcasting and analyses the impact of different features on model performace.",
       tags: [
         {
-          name: "react",
+          name: "python",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "ml",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "randomforest",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: energy_demand,
+      source_code_link: "https://github.com/avianage/Renewable-Energy-Demand-Forcasting",
     },
     {
-      name: "Job IT",
+      name: "Movie Recommendor System",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Harnessed the power of the TMDB 5000 dataset to offer movie recommendations and provide detailed movie information.",
       tags: [
         {
-          name: "react",
+          name: "python",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "flask",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "nltk",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: movie,
+      source_code_link: "https://github.com/avianage/movie-recommender-system",
     },
     {
-      name: "Trip Guide",
+      name: "Emotion Detection Classifier",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Detects the emotion potrayed by a sentence by analyzing the text by breaking it into tokens using Naive Bayes Classifier.",
       tags: [
         {
-          name: "nextjs",
+          name: "python",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "naivebayes",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "classification",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: emotion,
+      source_code_link: "https://github.com/avianage/emotion-detection-classifier",
+    },
+  ];
+
+  const socialMediaLinks = [
+    {
+      id: "linkedin",
+      icon: linkedin, // Example icon URL
+      link: "https://www.linkedin.com/in/aakash-joshii", // Replace with your LinkedIn profile link
+    },
+    {
+      id: "github",
+      icon: github, // Example icon URL
+      link: "https://github.com/avianage", // Replace with your GitHub profile link
+    },
+    {
+      id: "instagram",
+      icon: instagram, // Example icon URL
+      link: "https://www.instagram.com/aakashxjoshi/", // Replace with your GitHub profile link
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  
+  export { services, technologies, experiences, testimonials, projects , socialMediaLinks};

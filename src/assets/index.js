@@ -30,6 +30,24 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import linkedin from "./social/linkedin.png";
+import instagram from "./social/instagram.png"
+
+import ml from "./ml.png";
+import cloud from "./cloud.png";
+import problem from "./problem.png";
+
+import tce from "./company/tce.png";
+import techentre from "./company/techentre.png";
+
+import python from "./tech/python.png";
+import cpp from "./tech/cpp.png";
+import linux from "./tech/linux.png";
+
+import energy_demand from "./projects/energy-demand.png";
+import movie from "./projects/movie.jpeg";
+import emotion from "./projects/emotion.png"
+
 export {
   logo,
   backend,
@@ -59,4 +77,17 @@ export {
   carrent,
   jobit,
   tripguide,
+  linkedin,
+  instagram,
+  ml,
+  cloud,
+  problem,
+  tce,
+  techentre,
+  python,
+  cpp,
+  linux,
+  energy_demand,
+  movie,
+  emotion
 };
