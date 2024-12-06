@@ -6,5 +6,8 @@ export default defineConfig({
   plugins: [react()],
   build: {
     chunkSizeWarningLimit: 2000,  // Increase the limit to 2MB
+    commonjsOptions: {
+      ignoreDynamicRequires: true,
+    },
   },
 })
