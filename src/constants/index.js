@@ -36,7 +36,8 @@ import {
     linux,
     energy_demand,
     movie,
-    emotion
+    emotion,
+    leetcode
   } from "../assets";
   
   export const navLinks = [
@@ -248,6 +249,11 @@ import {
       icon: instagram, // Example icon URL
       link: "https://www.instagram.com/aakashxjoshi/", // Replace with your GitHub profile link
     },
+    {
+      id: "leetcode",
+      icon: leetcode,
+      link: "https://leetcode.com/u/avianage/"
+    }
   ];
   
   

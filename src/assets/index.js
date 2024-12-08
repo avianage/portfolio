@@ -31,7 +31,8 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 import linkedin from "./social/linkedin.png";
-import instagram from "./social/instagram.png"
+import instagram from "./social/instagram.png";
+import leetcode from "./social/leetcode.svg";
 
 import ml from "./ml.png";
 import cloud from "./cloud.png";
@@ -89,5 +90,6 @@ export {
   linux,
   energy_demand,
   movie,
-  emotion
+  emotion,
+  leetcode
 };
